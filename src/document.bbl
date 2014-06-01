@@ -1,0 +1,14 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.52 }
+
+\bibitem[Menasce e Almeida 2003]{Taurion2009}
+\abntrefinfo{Menasce e Almeida}{MENASCE; ALMEIDA}{2003}
+{MENASCE, D.~A.; ALMEIDA, V. A.~F. \textsf{Planejamento de capacidade para
+  serviços na Web: métricas, modelos e métodos.} Rio de Janeiro: Campus,
+  2003.}
+
+\end{thebibliography}
