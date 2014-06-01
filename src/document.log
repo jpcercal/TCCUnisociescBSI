@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.25)  1 JUN 2014 04:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.25)  1 JUN 2014 11:46
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -928,13 +928,13 @@ Package caption Info: End \AtBeginDocument code.
 
 (./document/config/parameters.tex
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 75.
+(babel)             in language append on input line 58.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 75.
+(babel)             in language append on input line 58.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 75.
+(babel)             in language append on input line 58.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 75.
+(babel)             in language append on input line 58.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/sc' will be
 (Font)              scaled to size 10.79993pt on input line 7.
@@ -978,62 +978,6 @@ Package babel Info: Redefining portuges shorthand "|
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 9.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 9.
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.9 	\aprovacao
-                [2
-
-]
-Overfull \hbox (19.91684pt too wide) in paragraph at lines 9--9
-[]$[]$ 
- []
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 10.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 10.
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.10 	\outrosPreTextuais
-                         [3
-
-]
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 10.
-LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 10.79993pt on input line 10.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 10.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 10.
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.10 	\outrosPreTextuais
-                         [4
-
-]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 10.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language append on input line 10.
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.10 	\outrosPreTextuais
-                         [5
-
-]
-Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 12.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 12.
@@ -1042,7 +986,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.12 	\begin{resumo}
-                     [6
+                     [2
 
 ] (./document/pages/resumo.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--6
@@ -1059,7 +1003,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.14 	\end{resumo}
-                   [7
+                   [3
 
 
 ] (./document/pages/abstract.tex
@@ -1077,7 +1021,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.18 	\end{abstract}
-                     [8
+                     [4
 
 
 ] (./document.lof)
@@ -1093,7 +1037,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.20 	\indices
-               [9
+               [5
 
 ] (./document.toc)
 \tf@toc=\write8
@@ -1108,7 +1052,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.20 	\indices
-               [10
+               [6
 
 ] (./document/pages/introducao.tex
 Cap\'{\i }tulo 1.
@@ -1126,7 +1070,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 17.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 17.
-[11
+[7
 
 
 ]
@@ -1137,7 +1081,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 3.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 3.
- [12]
+ [8]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 3.
 )
@@ -1150,7 +1094,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 27.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language append on input line 27.
-[13
+[9
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 27.
@@ -1166,21 +1110,20 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 27.
  ) 
 Here is how much of TeX's memory you used:
- 12081 strings out of 493315
- 177466 string characters out of 6137904
- 374142 words of memory out of 5000000
- 15265 multiletter control sequences out of 15000+600000
- 34982 words of font info for 46 fonts, out of 8000000 for 9000
+ 12074 strings out of 493315
+ 177381 string characters out of 6137904
+ 374126 words of memory out of 5000000
+ 15260 multiletter control sequences out of 15000+600000
+ 31966 words of font info for 44 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 43i,5n,45p,573b,431s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,5n,45p,573b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/
-2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2013/te
-xmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on document.pdf (13 pages, 36404 bytes).
+2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on document.pdf (9 pages, 28613 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
+ 90 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  14 named destinations out of 1000 (max. 500000)
  49 words of extra memory for PDF output out of 10000 (max. 10000000)
 

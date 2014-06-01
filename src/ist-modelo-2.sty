@@ -1,19 +1,19 @@
-% Definições LaTeX para Trabalhos de Conclusão de Curso - SOCIESC - IST
+% Defini����es LaTeX para Trabalhos de Conclus��o de Curso - SOCIESC - IST
 
-% Equipe de definição:
+% Equipe de defini����o:
 %    Eduardo da Silva - eduardo@sociesc.org.br
 %    Marco Andre Lopes Mendes - marco@sociesc.org.br
 
 % Adaptado pela Aluna Cintia Ghisi -
 % Ano/Semestre: (2012/1)
 
-% Correções por Jean Marcel Duvoisin Schmidt <contact@jschmidt.me>
+% Corre����es por Jean Marcel Duvoisin Schmidt <contact@jschmidt.me>
 % Ano/Semestre: (2012/2)
 %      - chapters e sections em caixa alta
 %      - chapters e subsections em negrito
 %      - novo modelo para figuras
 %      - subsection com a identacao correta
-%      - equação na numeracao correta
+%      - equa����o na numeracao correta
 %      - enumeracao e listas corretamente formatadas
 %      - retirado erros e warnings do LaTeX
 %      - melhorias menores
@@ -24,16 +24,16 @@
 %      - verificar a formatacao das referencias
 %%%%%%%%%%%%%%%%%%%%
 
-% Última alteração: 05/08/2012
+% ��ltima altera����o: 05/08/2012
 
-% OBS: Não altere esse arquivo. Novas versões podem ser disponibilizadas.
+% OBS: N��o altere esse arquivo. Novas vers��es podem ser disponibilizadas.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % exemplo de figura (By Jean Marcel Duvoisin Schmidt)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{figure}[htbp]
 %\centering
-%\caption{Divisões do SNC}
+%\caption{Divis��es do SNC}
 %\includegraphics[width=.6\textwidth]{figuras/snc.jpg}
 %\label{fig:snc}
 %\centering \\
@@ -44,7 +44,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{ist-modelo-2}[2012/08/05]
 
-% Pacotes geralmente necessários para desenvolvimento do trabalho
+% Pacotes geralmente necess��rios para desenvolvimento do trabalho
 
 \usepackage{makeidx}
 \usepackage{enumitem}
@@ -73,7 +73,7 @@
 \makeindex
 \makeglossary
 
-% Definições de comandos para a formatação do trabalho
+% Defini����es de comandos para a formata����o do trabalho
 
 %Usando Arial Tanto para Texto Quanto para Titulo
 \renewcommand{\rmdefault}{phv}\renewcommand{\sfdefault}{phv}
@@ -129,7 +129,7 @@
 	\leftskip
 	{Tabela \normalfont #1}\nobreak \tabfillnum{#2}}
 
-% Formato do índice
+% Formato do ��ndice
 \renewcommand*\l@chapter[2]{
   \ifnum \c@tocdepth >\m@ne
     \addpenalty{-\@highpenalty}
@@ -220,7 +220,7 @@
 
 \newcommand{\outrosPreTextuais}{
 
-% Dedicatória
+% Dedicat��ria
 	\clearpage\thispagestyle{empty}
 	\vspace*{14cm}
 	%\begin{singlespace}
@@ -230,7 +230,7 @@
 			%\end{minipage}
 		\end{flushright}
 	%\end{singlespace}
-% FIM - Dedicatória
+% FIM - Dedicat��ria
 
 % Agradecimentos
 \clearpage\thispagestyle{empty}
@@ -249,7 +249,7 @@
 \end{center}
 % FIM - Agradecimentos
 
-% Citaçao
+% Cita��ao
 \clearpage\thispagestyle{empty}
 \vspace*{12cm}
 \begin{flushright}
@@ -260,7 +260,7 @@
 		\end{flushright}
 	\end{minipage}
 \end{flushright}
-% FIM - Citaçao
+% FIM - Cita��ao
 }
 
 \expandafter
@@ -268,7 +268,7 @@
 \@namedef{captions\CurrentOption}{
 	\def\contentsname{SUM\'ARIO}
 }
-\def\plftitle{LISTA DE ILUSTRAÇÕES}
+\def\plftitle{LISTA DE ILUSTRA����ES}
 \def\plttitle{LISTA DE TABELAS}
 
 
@@ -287,7 +287,7 @@
 \pagestyle{fancy}
 }
 
-%%% Traça um quadro cercando um ou mais parágrafos.
+%%% Tra��a um quadro cercando um ou mais par��grafos.
 \newlength{\squareboxwidth}
 \newenvironment{squarebox}{%
   \setlength{\squareboxwidth}{\linewidth}
@@ -334,7 +334,7 @@
 \textbf{\textsf{\@author}}
 \par\vspace*{4cm}
 \par\bigskip\normalfont
-\textsf{\textbf{\titulo}}
+\textsf{\textbf{\title}}
 \par\vfill
 \textbf{\textsf{\cidade\\\ano}}
 \end{center}
@@ -350,7 +350,7 @@
 		\par\bigskip\normalfont
 		%\vspace*{2cm}
 		\par\vfill
-		\textsf{\textbf{\titulo}}
+		\textsf{\textbf{\title}}
 		\par\vspace*{3cm}
 	\end{center}
 	\begin{singlespace}
@@ -365,21 +365,20 @@
 		\par\vspace*{3cm}
 		\par\bigskip\normalfont
 		\textsf{\textbf{Orientador: \ABNTorientadordata}}
-		\par\textsf{\textbf{Coorientador: \ABNTcoorientadordata}}
 		\par\vfill
 		\textbf{\textsf{\cidade\\\ano}}
 	\end{center}
 
 }
 
-% Folha de Aprovação
+% Folha de Aprovacao 
 \newcommand{\aprovacao}{
 	\clearpage\thispagestyle{empty}
 	\begin{center}
 		\textbf{\textsf{\@author}}
 		\par\bigskip\normalfont
 		\par\vspace*{2cm}
-		\par\textsf{\textbf{\titulo}}
+		\par\textsf{\textbf{\title}}
 		\par\vspace*{2cm}
 	\end{center}
 	\begin{singlespace}
