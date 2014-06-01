@@ -1,0 +1,450 @@
+% Definições LaTeX para Trabalhos de Conclusão de Curso - SOCIESC - IST
+
+% Equipe de definição:
+%    Eduardo da Silva - eduardo@sociesc.org.br
+%    Marco Andre Lopes Mendes - marco@sociesc.org.br
+
+% Adaptado pela Aluna Cintia Ghisi -
+% Ano/Semestre: (2012/1)
+
+% Correções por Jean Marcel Duvoisin Schmidt <contact@jschmidt.me>
+% Ano/Semestre: (2012/2)
+%      - chapters e sections em caixa alta
+%      - chapters e subsections em negrito
+%      - novo modelo para figuras
+%      - subsection com a identacao correta
+%      - equação na numeracao correta
+%      - enumeracao e listas corretamente formatadas
+%      - retirado erros e warnings do LaTeX
+%      - melhorias menores
+
+%%%%%%%%%%%%%%%%%%%%
+% TODO list
+%      - corrigir a formatacao do comando \cite
+%      - verificar a formatacao das referencias
+%%%%%%%%%%%%%%%%%%%%
+
+% Última alteração: 05/08/2012
+
+% OBS: Não altere esse arquivo. Novas versões podem ser disponibilizadas.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% exemplo de figura (By Jean Marcel Duvoisin Schmidt)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{figure}[htbp]
+%\centering
+%\caption{Divisões do SNC}
+%\includegraphics[width=.6\textwidth]{figuras/snc.jpg}
+%\label{fig:snc}
+%\centering \\
+%\footnotesize Fonte: \cite{AFH2012}
+%\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{ist-modelo-2}[2012/08/05]
+
+% Pacotes geralmente necessários para desenvolvimento do trabalho
+
+\usepackage{makeidx}
+\usepackage{enumitem}
+\usepackage{mathtools}
+
+\usepackage[left=3cm, right=2cm, top=3cm, bottom=2cm]{geometry}
+
+\makeatletter
+\usepackage[brazil]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{pslatex}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+%\usepackage[alf,abnt-repeated-author-omit=yes]{abntcite}
+\usepackage[alf]{abntcite}
+\usepackage[font=bf]{caption}
+\usepackage{url}
+\usepackage{calc}
+\usepackage{indentfirst}
+\usepackage{acronym}
+\usepackage{listings}
+\usepackage{lipsum}
+\usepackage{paralist}
+\makeindex
+\makeglossary
+
+% Definições de comandos para a formatação do trabalho
+
+%Usando Arial Tanto para Texto Quanto para Titulo
+\renewcommand{\rmdefault}{phv}\renewcommand{\sfdefault}{phv}
+
+%LInha sob a assinatura da banca
+\setlength{\ABNTsignthickness}{0.4pt}
+
+% Linhas orfans e viuvas
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+
+%% Comando auxiliar para montagem da lista de figuras
+\newcommand{\figfillnum}[1]{
+  {\hspace{1em}\normalfont\dotfill}\nobreak
+  \hb@xt@\@pnumwidth{\hfil\normalfont #1}{}\par}
+
+%Cria um comando auxiliar para montagem da lista de tabelas
+\newcommand{\tabfillnum}[1]{
+  {\hspace{1em}\normalfont\dotfill}\nobreak
+  \hb@xt@\@pnumwidth{\hfil\normalfont #1}{}\par}
+
+% Altera a forma de montagem de lista de figuras
+\renewcommand*{\l@figure}[2]{
+	\leftskip 3.1em
+	\rightskip 1.6em
+	\parfillskip -\rightskip
+	\parindent 0.5em
+	\textbf{$-$}
+	\parindent 1em
+	\@tempdima 2.0em
+	\advance
+	\leftskip
+	\@tempdima
+	\nobreak
+	\hskip -
+	\leftskip
+	{Figura \normalfont #1}\nobreak \figfillnum{#2}}
+
+% Altera a forma de montagem de lista de tabelas
+\renewcommand*{\l@table}[2]{
+	\leftskip 3.1em
+	\rightskip 1.6em
+	\parfillskip -\rightskip
+	\parindent 0.5em
+	\textbf{$-$}
+	\@tempdima 2.0em
+	\advance
+	\leftskip
+	\@tempdima
+	\nobreak
+	\hskip -
+	\leftskip
+	{Tabela \normalfont #1}\nobreak \tabfillnum{#2}}
+
+% Formato do índice
+\renewcommand*\l@chapter[2]{
+  \ifnum \c@tocdepth >\m@ne
+    \addpenalty{-\@highpenalty}
+    \setlength\@tempdima{1em}
+    \begingroup
+     \parindent \z@ \rightskip \@pnumwidth
+     \parfillskip -\@pnumwidth
+     \leavevmode \bfseries
+     \advance\leftskip\@tempdima
+     \hskip -\leftskip
+     \uppercase{#1}\nobreak\
+      \leaders\hbox{$\m@th
+       \mkern \@dotsep mu\hbox{.}\mkern \@dotsep
+       mu$}\hfil\nobreak\hb@xt@\@pnumwidth{\hss #2}\par
+     \penalty\@highpenalty
+
+   \endgroup
+ \fi}
+\renewcommand*\l@section[2]{
+ \ifnum \c@tocdepth >\m@ne
+   \addpenalty{-\@highpenalty}
+   \setlength\@tempdima{2em}
+   \begingroup
+     \parindent \z@ \rightskip \@pnumwidth
+     \parfillskip -\@pnumwidth
+     \leavevmode \normalfont
+     \advance\leftskip\@tempdima
+     \hskip -\leftskip
+     \uppercase{#1}\nobreak\
+      \leaders\hbox{$\m@th
+       \mkern \@dotsep mu\hbox{.}\mkern \@dotsep
+       mu$}\hfil\nobreak\hb@xt@\@pnumwidth{\hss #2}\par
+     \penalty\@highpenalty
+   \endgroup
+\fi}
+\renewcommand*\l@subsection[2]{
+ \ifnum \c@tocdepth >\m@ne
+   \addpenalty{-\@highpenalty}
+   \setlength\@tempdima{2.5em}
+   \begingroup
+     \parindent \z@ \rightskip \@pnumwidth
+     \parfillskip -\@pnumwidth
+     \leavevmode \bfseries
+     \advance\leftskip\@tempdima
+     \hskip -\leftskip
+     #1\nobreak\
+      \leaders\hbox{$\m@th
+       \mkern \@dotsep mu\hbox{.}\mkern \@dotsep
+       mu$}\hfil\nobreak\hb@xt@\@pnumwidth{\hss #2}\par
+     \penalty\@highpenalty
+   \endgroup
+\fi}
+
+% Formatar capitulos numerados
+\def\@makechapterhead#1{
+  {\noindent\textbf{\textsf{
+ {\thechapter\hspace{.1cm}}\MakeUppercase{#1}}}
+    \vspace*{0.62cm}\par
+  }}
+
+% Formatar capitulos nao numerados
+\def\@makeschapterhead#1{
+\begin{center}
+  {\noindent\centering\textbf{\textsf{
+   \MakeUppercase{#1}
+    }}}
+\end{center}
+  \par}
+
+% Formatar Secao e subsecao numerados
+\renewcommand\section{\@startsection {section}{1}{\z@}
+                                   {-3.5ex \@plus -1ex \@minus -.2ex}
+                                   { 2.3ex \@plus .1ex}
+                                   {\normalfont\normalsize\MakeUppercase}
+                                   }
+\renewcommand\subsection{\@startsection{subsection}{2}{-6mm}
+                                   {-3.5ex \@plus -1ex \@minus -.2ex}
+                                   {2.3ex  \@plus .1ex}
+                                   {\normalfont\normalsize\textbf}
+                                   }
+\renewcommand\subsubsection{\@startsection{subsubsection}
+                                   {3}
+				   {\z@}
+                                   {-3.5ex \@plus -1ex \@minus -.2ex}
+                                   {2.3ex  \@plus .1ex}
+                                   {\normalfont\normalsize}
+				   }
+
+\newcommand{\outrosPreTextuais}{
+
+% Dedicatória
+	\clearpage\thispagestyle{empty}
+	\vspace*{14cm}
+	%\begin{singlespace}
+		\begin{flushright}
+			%\begin{minipage}[r]{0.70\columnwidth}
+				\fraseDedicatoria
+			%\end{minipage}
+		\end{flushright}
+	%\end{singlespace}
+% FIM - Dedicatória
+
+% Agradecimentos
+\clearpage\thispagestyle{empty}
+\begin{center}
+	\textsc{\textbf{{\textsf{AGRADECIMENTOS}}}}
+	\par\vfill
+	%\vspace*{2cm} % mudei este tamanho
+	%\begin{singlespace}
+		%\begin{flushright}
+			%\begin{minipage}[r]{\columnwidth} % mudei este tamanho
+				\fraseAgradecimento
+			%\end{minipage}
+		%\end{flushright}
+	%\end{singlespace}
+	\par\vfill
+\end{center}
+% FIM - Agradecimentos
+
+% Citaçao
+\clearpage\thispagestyle{empty}
+\vspace*{12cm}
+\begin{flushright}
+	\begin{minipage}[]{0.66\columnwidth}
+		\fraseCitacao
+		\begin{flushright}
+			\autorFraseCitacao
+		\end{flushright}
+	\end{minipage}
+\end{flushright}
+% FIM - Citaçao
+}
+
+\expandafter
+ \adddialect\csname l@\CurrentOption\endcsname\l@brazil
+\@namedef{captions\CurrentOption}{
+	\def\contentsname{SUM\'ARIO}
+}
+\def\plftitle{LISTA DE ILUSTRAÇÕES}
+\def\plttitle{LISTA DE TABELAS}
+
+
+\newcommand{\indices}{
+\pagestyle{empty}
+\listoffigures
+%\listoftables
+
+%Glossario
+%\chapter*{LISTA DE SIGLAS}
+%\begin{acronym}
+%\input{glossario}
+%\end{acronym}
+
+\tableofcontents
+\pagestyle{fancy}
+}
+
+%%% Traça um quadro cercando um ou mais parágrafos.
+\newlength{\squareboxwidth}
+\newenvironment{squarebox}{%
+  \setlength{\squareboxwidth}{\linewidth}
+  \addtolength{\squareboxwidth}{-12pt}
+  \begin{center}
+    \begin{tabular}{|c|}
+      \hline
+      \begin{minipage}{\squareboxwidth}
+        \medskip
+}
+{
+  \medskip
+\end{minipage}
+\\ \hline
+\end{tabular}
+\end{center}
+    \vspace{-0.7cm}
+}
+
+\lstset{
+    numbers=left,
+    stepnumber=1,
+    firstnumber=auto,
+    numberstyle=\small,
+    numberfirstline=true,
+    numberblanklines=false,
+    inputencoding=latin1,
+    extendedchars=true,
+    breaklines=true,
+    frame=none,
+    basicstyle=\footnotesize,
+    stringstyle=\ttfamily,
+    showstringspaces=false,
+    xleftmargin=10mm,
+    numbersep=7mm
+}
+
+% Define a capa
+\renewcommand{\capa}{
+\begin{titlepage}
+\begin{center}
+\textsc{\textsf{\textbf{\universidade}\\{\textbf{\faculdade}}}}
+\par\vspace*{4cm}
+\textbf{\textsf{\@author}}
+\par\vspace*{4cm}
+\par\bigskip\normalfont
+\textsf{\textbf{\titulo}}
+\par\vfill
+\textbf{\textsf{\cidade\\\ano}}
+\end{center}
+\end{titlepage}
+}
+% fim da capa
+
+% Folha de rosto
+\renewcommand{\folhaderosto}{
+	\clearpage\thispagestyle{empty}
+	\begin{center}
+		\textbf{\textsf{\@author}}
+		\par\bigskip\normalfont
+		%\vspace*{2cm}
+		\par\vfill
+		\textsf{\textbf{\titulo}}
+		\par\vspace*{3cm}
+	\end{center}
+	\begin{singlespace}
+		\begin{flushright}
+			\begin{minipage}[r]{0.55\columnwidth}
+				\textbf{\fraseFolhaRosto}
+			\end{minipage}
+		\end{flushright}
+	\end{singlespace}
+
+	\begin{center}
+		\par\vspace*{3cm}
+		\par\bigskip\normalfont
+		\textsf{\textbf{Orientador: \ABNTorientadordata}}
+		\par\textsf{\textbf{Coorientador: \ABNTcoorientadordata}}
+		\par\vfill
+		\textbf{\textsf{\cidade\\\ano}}
+	\end{center}
+
+}
+
+% Folha de Aprovação
+\newcommand{\aprovacao}{
+	\clearpage\thispagestyle{empty}
+	\begin{center}
+		\textbf{\textsf{\@author}}
+		\par\bigskip\normalfont
+		\par\vspace*{2cm}
+		\par\textsf{\textbf{\titulo}}
+		\par\vspace*{2cm}
+	\end{center}
+	\begin{singlespace}
+		\begin{flushright}
+			\begin{minipage}[r]{0.55\columnwidth}
+				\textbf{\fraseAprovacao}
+			\end{minipage}
+		\end{flushright}
+	\end{singlespace}
+
+	\par\bigskip\normalfont
+	\vspace*{3cm}
+
+	\begin{flushleft}
+		\textbf{\textsf{\cidade, \today.}}
+	\end{flushleft}
+
+	\par\bigskip\normalfont
+
+	\par\vfill
+
+	\begin{singlespace}
+	\begin{minipage}[c]{1\columnwidth}
+		\begin{center}
+
+		%\begin{displaymath}
+			\rule{8.3cm}{.1mm}
+			\par\vspace*{0.1cm}
+			\textbf{\membroBancaA}
+		%\end{displaymath}
+
+		\par\vspace*{1.5cm}
+
+		%\begin{displaymath}
+			\rule{8.3cm}{.1mm}
+			\par\vspace*{0.01cm}
+			\textbf{\membroBancaB}
+		%\end{displaymath}
+
+		\par\vspace*{1.5cm}
+
+		%\begin{displaymath}
+			\rule{8.3cm}{.1mm}
+			\par\vspace*{0.1cm}
+			\textbf{\membroBancaC}
+		%\end{displaymath}
+
+		\end{center}
+	\end{minipage}
+	\end{singlespace}
+}
+
+\def\resumoname{RESUMO}
+\def\ABNTabstractname{ABSTRACT}
+
+\setlength{\parskip}{.0cm}
+\linespread{1}
+
+\def\@enumerate{
+  \itemsep 1pt
+  \parskip 0pt
+  \parsep 0pt
+  \parindent 2cm
+}
+
+
+\renewcommand{\theenumi}{\alph{enumi}}
+\endinput

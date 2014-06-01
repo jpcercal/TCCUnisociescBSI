@@ -1,0 +1,14 @@
+._*
+.~lock.*
+.buildpath
+.DS_Store
+.idea
+nbproject
+.project
+.settings
+composer.lock
+composer.phar
+_reports
+.lock
+/build/
+/tmp/
