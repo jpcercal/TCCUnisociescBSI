@@ -1,7 +1,0 @@
-\select@language {brazil}
-\contentsline {chapter}{\numberline {1}INTRO}{7}{chapter.listoffigures.1}
-\contentsline {section}{\numberline {1.1}JUSTIFICATIVA}{7}{section.listoffigures.1.1}
-\contentsline {section}{\numberline {1.2}OBJETIVOS}{7}{section.listoffigures.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Objetivo Geral}{7}{subsection.listoffigures.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Objetivos Espec\IeC {\'\i }ficos}{8}{subsection.listoffigures.1.2.2}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{9}{subsection.listoffigures.1.2.2}
