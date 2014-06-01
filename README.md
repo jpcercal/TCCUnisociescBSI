@@ -7,4 +7,4 @@ Além disto, fornecer um projeto base para exemplificar o uso do template.
 
 ## Notas:
 
-O projeto está sendo mantido por: **Leila Regina Techio** e **João Paulo Cercal**.
+O projeto está sendo mantido por: **João Paulo Cercal**.
