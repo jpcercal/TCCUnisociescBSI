@@ -1,0 +1,3 @@
+<?php
+
+$carro = new Carro();
