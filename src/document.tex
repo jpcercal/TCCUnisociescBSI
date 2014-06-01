@@ -1,18 +1,19 @@
 \documentclass[12pt,floatnumber=continuous,espaco=umemeio]{abnt}
 \usepackage{ist-modelo-2}
 
-\begin{document} 
-
+\begin{document}
+ 
 	\input{document/config/parameters}
-	\capa 
-	\folhaderosto
+	\capa
+	\folhaderosto 
+	 
 	%\aprovacao
 	%\outrosPreTextuais
 	 
 	\begin{resumo}
 		\input{document/pages/resumo}
-	\end{resumo} 
- 
+	\end{resumo}
+  
 	\begin{abstract}
 		\input{document/pages/abstract}
 	\end{abstract}
@@ -20,8 +21,10 @@
 	\indices
 
 	\input{document/pages/introducao}
-
+	
+	\input{document/pages/capitulo1}
+	
 	\bibliography{ref}
-	\bibliographystyle{abnt-alf}
+	\bibliographystyle{abnt-alf} 
 	
 \end{document}
