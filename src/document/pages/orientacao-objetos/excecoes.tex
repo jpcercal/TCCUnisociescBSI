@@ -33,7 +33,67 @@ estas informações estão:
     \item e, opcionalmente, um código de erro.
 \end{enumerate}
 
-\textit{VER TABELA DE \cite[p.52]{phpObjectsPatternsAndPractice}.}
+% Esta tabela está na p.52] da referencia: phpObjectsPatternsAndPractice
+\begin{table}[h!tb]
+	\centering
+	\setlength{\belowcaptionskip}{9pt}
+	\caption[Métodos públicos da classe \textit{Exception}]{\textbf{Email local X
+	Email em nuvem}}
+	\begin{tabular}{ l | p{0.7\textwidth} }
+	
+		\hline
+		\textbf{Método}
+		& \textbf{Descrição} \\
+		\hline
+		
+        \textit{getMessage()} 		
+        & Recupeara uma \textit{string} que foi enviada
+        para o construtor.
+        
+        \\ \cline{1-2}
+        \textit{getCode()} 			
+        & Recupera o código de erro.
+        \\ \cline{1-2}
+        
+        \textit{getFile()} 			
+        & Recupera o arquivo em que a exceção foi lançada.
+        \\ \cline{1-2}
+        
+        \textit{getLine()} 			
+        & Recupera o número da linha em que a exceção ocorreu.
+        \\ \cline{1-2}
+        
+        \textit{getPrevious()} 		
+        & Recupera um objeto de uma exceção.
+        \\ \cline{1-2}
+        
+        \textit{getTrace()} 		
+        & Recupera um \textit{array} multimensional contendo as chamadas de
+        métodos, incluindo: funções membro, classes, arquivos e argumentos. \\
+        \cline{1-2}
+        
+        \textit{getTraceAsString()} 
+        & Recupera os dados de \textit{getTrace()} no formato de uma
+        \textit{string}.
+        \\ \cline{1-2}
+        
+        \textit{\_\_toString()} 		
+        & Método mágico executado automaticamente quando um objeto é exibido em
+        tela como uma \textit{string}. Sendo assim, retorna uma \textit{string}
+        descrevendo os detalhes da exceção.
+        \\
+        \hline
+	\end{tabular}
+	\newline
+	\newline
+	\label{tab:excecao}
+	\begin{footnotesize}
+		Fonte: adaptado de \cite[p.53]{phpObjectsPatternsAndPractice}
+	\end{footnotesize}
+\end{table}
+
+\FloatBarrier 	% Este comando impede que as imagens 
+				% flutuem a partir deste ponto no seu documento
 
 \textit{Uma imagem que descreva como se faz para lançar uma exceção e outra
 para captura-la\ldots.}
