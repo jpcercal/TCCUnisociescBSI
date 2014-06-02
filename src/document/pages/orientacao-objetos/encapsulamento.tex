@@ -1,0 +1,48 @@
+\section{ENCAPSULAMENTO}
+
+Até então quando definimos as propriedades para a nossa classe, deixamos elas 
+com a visibilidade: privada, do inglês, \textit{private}. Sendo que, sempre que 
+definirmos as propriedades e métodos em uma classe deve-se informar qual a  sua
+visibilidade. Por conseguinte, existem três visibilidades, são elas: privada, 
+protegida e pública. Segundo \citeonline{javaComoProgramar}, os conceitos de 
+visibilidade também são chamados de modificadores de acesso.
+
+A visibilidade privada, do inglês \textit{private}, permite acesso somente
+dentro do escopo da classe que definiu a propriedade ou método. Enquanto que, a 
+visibilidade protegida, do inglês \textit{protected}, permite que todas as
+classes  que herdam propriedades ou métodos tenham acesso dentro do escopo da classe filha. 
+Em contrapartida, a visibilidade pública, do inglês \textit{public}, permite que
+qualquer objeto que tenha instanciado um objeto da classe que definiu uma propriedade ou 
+método possa invoca-lo no caso do método, ou modificar o seu estado no caso de 
+uma propriedade \cite{learningJava}.
+
+Sendo assim, por questões de segurança da aplicação é interessante fornecer
+interfaces para manipulação dos estados de um objeto. Por conta disto,  sempre
+que definirmos uma propriedade em uma classe iremos utilizar a visibilidade 
+privada, caso essa classe não implemente conceitos de herança posteriormente, 
+ou então, com visibilidade protegida afim de permitir que as classes 
+especialistas herdem as suas definições. E, é justamente este o conceito de
+encapsulamento, realizar o ocultamento dos dados ou informações \cite{javaComoProgramar}.
+
+Mas, para que um cliente de um objeto – todos os objetos que estão fora do
+escopo da classe -  possa modificar os estados das propriedades definimos 
+métodos especialistas conhecidos como: métodos \textit{getters} e
+\textit{setters}.
+
+\subsection{Métodos Getters e Setters}
+
+São métodos responsáveis por modificar e recuperar os estados de uma variável
+membro de uma classe permitindo que esta função membro esteja exposta a todo o 
+escopo da aplicação.
+
+No caso do método configurar, do inglês \textit{set}, ele permite que os
+clientes de um objeto configurem novos valores para uma propriedade, realizando 
+antecipadamente uma ação para validar a entrada de dados por exemplo.
+
+Em contrapartida, existe o método obter, do inglês \textit{get}, que recupera o
+valor de uma propriedade, sendo que, este método poderia realizar por exemplo uma 
+formatação adequada de uma propriedade.
+
+Sendo que, o nome desses métodos (por conta de uma convenção de atribuição de
+nomes) recebe o prefixo \textit{set} ou \textit{get} seguido do nome da
+propriedade, tendo esta a sua primeira letra em caixa alta \cite{javaComoProgramar}.
