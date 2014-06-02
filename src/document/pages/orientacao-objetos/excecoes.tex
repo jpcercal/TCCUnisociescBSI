@@ -1,6 +1,39 @@
 \section{EXCEÇÕES}
 
-\textit{Segundo  exceção é uma mensagem que foi enviada - geralmente por conta de um 
-erro de processamento – durante a execução de uma atribuição ou leitura de 
-valores em variáveis locais ou variáveis membro, e ainda, durante a execução 
-de um método. Quando uma (NIEMEYER; LEUCK, 2013).}
+A linguagem de programação PHP 5, introduz o conceito de exceções, e isto traz
+uma grande vantagem se comparada a manipulação de erros das versões anteriores
+da tecnologia, além disto, você poderá também encontrar similaridades nos
+conceitos aplicados ao PHP caso tenha conhecimento de outras linguagens, tais
+como: \textit{Java} e \textit{C++} \cite{phpObjectsPatternsAndPractice}.
+
+Uma exceção indica que ocorreu uma condição não esperada ou um erro, sendo que,
+isto geralmente acontece por conta de um erro de processamento, como por
+exemplo: uma atribuição ou leitura de valores incorretos ou obrigatórios em
+variáveis locais e propriedades durante a execuçao de um método \cite{learningJava}.
+
+Segundo \citeonline{phpObjectsPatternsAndPractice} uma exceção é um objeto
+especial instanciado a partir da classe \textit{Exception}, ou a partir de uma
+classe especialista, portanto, estes objetos são projetados para criar e
+reportar informações de erro. 
+
+Sendo assim, se comparado a forma tradicional de manipulação de erros, as
+exceções são uma forma elegante de manipulá-los e tratá-los dentro de uma
+aplicação, de acordo com o que vimos no capítulo \ref{heranca} que
+tratava sobre herança, pode-se extender as funcionalidas da classe
+\textit{Exception}, personalizando os seus dados e o seu comportamento \cite{phpMasterWriteCuttingEdgeCode}.
+
+Conforme afirma \citeonline{phpMasterWriteCuttingEdgeCode}, um objeto da classe 
+\textit{Exception}, irá conter informações referente ao erro que ocorreu, dentre
+estas informações estão:
+
+\begin{enumerate}[a)]
+    \item o nome do arquivo;
+    \item a linha em que ocorreu o problema;
+    \item uma mensagem;
+    \item e, opcionalmente, um código de erro.
+\end{enumerate}
+
+\textit{VER TABELA DE \cite[p.52]{phpObjectsPatternsAndPractice}.}
+
+\textit{Uma imagem que descreva como se faz para lançar uma exceção e outra
+para captura-la\ldots.}
