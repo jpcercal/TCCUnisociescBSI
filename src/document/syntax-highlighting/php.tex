@@ -1,0 +1,23 @@
+\usepackage{minted}
+
+\renewcommand{\theFancyVerbLine}
+{
+	\sffamily \textcolor[rgb]{0.05,0.05,0.05}
+	{\footnotesize \oldstylenums{
+		\arabic{FancyVerbLine}
+	}}
+}
+
+% Exemplo de Uso:
+% 
+% \inputminted[
+% 		mathescape,
+%   	linenos,
+%   	numbersep=5pt,
+%   	gobble=0,
+%   	frame=lines,
+%   	framesep=10mm
+% ]{php}{images/php/method-call.php}
+% \label{fig:classe2}
+% \centering
+% \footnotesize Fonte: \fonteOAutor
