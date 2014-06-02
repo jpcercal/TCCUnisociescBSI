@@ -1,0 +1,39 @@
+\section{POLIMORFISMO}
+
+Polimorfismo é a capacidade que dois ou mais objetos de uma classe-filha tem  de
+responder a mensagens de diferentes formas
+\cite{php5ConceitosProgramacaoEIntegracaoComBancoDeDados}.
+
+Ou seja, polimorfismo é a possibilidade que um objeto tem de alterar o
+comportamento de um objeto com base em uma classe especialista, sendo assim, 
+são métodos que fornecem resultados distintos  de acordo com a subclasse 
+\cite{php5ConceitosProgramacaoEIntegracaoComBancoDeDados}. Desta forma quem 
+chama o método não precisa distingui-lo.
+
+Veremos a seguir a atribuição deste conceito no processo de aceleração de um
+veículo. Por conta disto, imagine o exemplo a seguir: dentre os comandos 
+disponíveis em um veículo, temos o acelerador que fornece uma interface 
+encapsulando a forma que compreende em como as coisas funcionam. Agora vamos 
+supor que vamos acelerar dois veículos diferentes, o primeiro veículo trata-se 
+de um carro popular com motor 1.0, enquanto que, o outro veículo é um 
+ esportivo, e por conta disto, estamos falando de um carro com motor 2.0. Então,
+ambos os veículos possuem a mesma interface de comunicação: o pedal acelerador, 
+que permite ao condutor se locomover de maneira mas rápida. Note, que quando o 
+condutor acelerar o carro popular este deverá ter aceleração mais lenta se 
+comparado ao esportivo, na prática é disto que se trata o polimorfismo.
+
+Voltando-se para o paradigma da orientação a objetos poderíamos ter uma classe
+generalista chamada \textit{Carro} que traria uma maneira de acelerar um
+veículo.  E, bom base nesta classe, criar duas outras classes especialistas, sendo que, 
+poderia ser nomeadas como: \textit{CarroPopular} e \textit{CarroEsportivo}.
+A seguir será apresentada a implementação destes conceitos
+utilizando a linguagem de programação PHP.
+
+\textit{Imagine o exemplo a seguir onde temos uma classe carro que possuí um
+método acelerar e que existam duas outras classes que extendem a classe carro, uma 
+delas é a Lamborghini a outra é “Ford Fiesta”, ambos os veículos
+aceleram, entretanto a lamborgini deverá ter uma aceleração superior, sendo assim irá 
+reescrever o método acelerar de acordo com as suas características, os objetos 
+que chamarem esta classe não saberam como acontece mas saberam que eles
+realmente  aceleram de maneira correspondente ao tipo de veículo que está sendo 
+testado.}
