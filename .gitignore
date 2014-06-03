@@ -30,7 +30,9 @@ _reports
 *.idx
 *.glo
 *.gls
-*.gz
 *.pdf
 *.pdfsync
 *.synctex
+*.synctex.gz
+*.gz
+*.pyg
