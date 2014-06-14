@@ -18,6 +18,13 @@
 %      - retirado erros e warnings do LaTeX
 %      - melhorias menores
 
+% Correções por João Paulo Cercal <jpcercal@gmail.com>
+% Ano/Semestre: (2014/1)
+%      - subsubsections
+%	   - caption size
+%      - retirado erros e warnings do LaTeX
+%      - melhorias menores
+
 %%%%%%%%%%%%%%%%%%%%
 % TODO list
 %      - corrigir a formatacao do comando \cite
@@ -127,6 +134,12 @@
 	\leftskip
 	{Tabela \normalfont #1}\nobreak \tabfillnum{#2}}
 
+% enables numbering of subsubsections.
+\setcounter{secnumdepth}{3}
+
+% includes subsubsections in the table of contents.
+\setcounter{tocdepth}{3}
+
 % Formato do índice
 \renewcommand*\l@chapter[2]{
   \ifnum \c@tocdepth >\m@ne
@@ -166,11 +179,28 @@
 \renewcommand*\l@subsection[2]{
  \ifnum \c@tocdepth >\m@ne
    \addpenalty{-\@highpenalty}
-   \setlength\@tempdima{2.5em}
+   \setlength\@tempdima{3em}
    \begingroup
      \parindent \z@ \rightskip \@pnumwidth
      \parfillskip -\@pnumwidth
      \leavevmode \bfseries
+     \advance\leftskip\@tempdima
+     \hskip -\leftskip
+     #1\nobreak\
+      \leaders\hbox{$\m@th
+       \mkern \@dotsep mu\hbox{.}\mkern \@dotsep
+       mu$}\hfil\nobreak\hb@xt@\@pnumwidth{\hss #2}\par
+     \penalty\@highpenalty
+   \endgroup
+\fi}
+\renewcommand*\l@subsubsection[2]{
+ \ifnum \c@tocdepth >\m@ne
+   \addpenalty{-\@highpenalty}
+   \setlength\@tempdima{3.8em}
+   \begingroup
+     \parindent \z@ \rightskip \@pnumwidth
+     \parfillskip -\@pnumwidth
+     \leavevmode \normalfont
      \advance\leftskip\@tempdima
      \hskip -\leftskip
      #1\nobreak\

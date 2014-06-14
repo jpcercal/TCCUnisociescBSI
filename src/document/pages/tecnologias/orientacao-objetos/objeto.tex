@@ -1,15 +1,15 @@
-\section{OBJETO}
+\subsection{Objeto}
 
-Um objeto é uma estrutura dinâmica criada com base em uma classe. Sendo que, 
-com base em uma classe podemos ter vários objetos, cada qual com suas 
-propriedades \cite{phpProgramandoComOrientacaoAObjetos}. 
+Um objeto é uma estrutura dinâmica criada com base em uma classe. Sendo que,
+com base em uma classe podemos ter vários objetos, cada qual com suas
+propriedades \cite{phpProgramandoComOrientacaoAObjetos}.
 
 De forma breve, os objetos são as instâncias de uma classe. Sendo que, as
-classes existem somente no código fonte de uma aplicação, enquanto que, as 
-instâncias de uma classe existem durante a execução de um programa. Portanto, 
-o software poderá criar vários objetos sob demanda tendo como base um mesmo 
+classes existem somente no código fonte de uma aplicação, enquanto que, as
+instâncias de uma classe existem durante a execução de um programa. Portanto,
+o software poderá criar vários objetos sob demanda tendo como base um mesmo
 modelo \cite{ios7ProgrammingFundamentalsObjectiveCXcodeAndCocoaBasics}. Deste
-modo, esses objetos são criados (instanciados) através de métodos construtores 
+modo, esses objetos são criados (instanciados) através de métodos construtores
 e destruídos (eliminados) através de métodos destrutores em tempo de execução
 \cite{umlEC++GuiaPraticoDeDesenvolvimentoOrientadoAObjeto}. Veremos no decorrer
 deste capítulo como funcionam os métodos construtores e destrutores.
@@ -17,31 +17,31 @@ deste capítulo como funcionam os métodos construtores e destrutores.
 \begin{figure}[h!tb]
 	\caption{Criação de um Objeto na linguagem PHP}
 	\label{fig:objeto}
-	
+
 	\centering
 	\includegraphics[width=0.75\textwidth]{images/object.png}
-	
+
 	\centering
 	\footnotesize Fonte: \fonteOAutor
 \end{figure}
 
-\FloatBarrier 	% Este comando impede que as imagens 
+\FloatBarrier 	% Este comando impede que as imagens
 				% flutuem a partir deste ponto no seu documento
 
 A seguir, será apresentada a análise do código exibido na
-figura \ref{fig:objeto}: 
+figura \ref{fig:objeto}:
 
 \begin{enumerate}[a)]
     \item linha 1: temos o início da execução de um bloco de código PHP;
     \item linha 3: criamos uma variável chamada \textbf{\$carro};
     chamamos um operador de atribuição da linguagem (representado pelo símbolo
     \textbf{=}) que irá atribuir o valor que está à direita do operador na
-    variável que está à esquerda; em seguida informamos um outro operador da 
+    variável que está à esquerda; em seguida informamos um outro operador da
     linguagem (representado pelo símbolo \textbf{new}) que é responsável por
-    criar uma referência em memória para o nosso tipo de dados que está sendo 
-    criado e, por fim, dizemos que classe queremos instanciar, que neste caso, 
+    criar uma referência em memória para o nosso tipo de dados que está sendo
+    criado e, por fim, dizemos que classe queremos instanciar, que neste caso,
     chama-se Carro. Logo após, o símbolo \textbf{()} representa um método
-    construtor (conceito que veremos ainda neste capítulo de Orientação a Objetos). 
-    Uma informação importante é que toda instrução da linguagem PHP termina 
+    construtor (conceito que veremos ainda neste capítulo de Orientação a Objetos).
+    Uma informação importante é que toda instrução da linguagem PHP termina
     com o símbolo de ponto-e-vírgula.
 \end{enumerate}

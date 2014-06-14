@@ -1,4 +1,4 @@
-\section{EXCEÇÕES}
+\subsection{Exceções}
 
 A linguagem de programação PHP 5, introduz o conceito de exceções, e isto traz
 uma grande vantagem se comparada a manipulação de erros das versões anteriores
@@ -14,7 +14,7 @@ variáveis locais e propriedades durante a execuçao de um método \cite{learnin
 Segundo \citeonline{phpObjectsPatternsAndPractice} uma exceção é um objeto
 especial instanciado a partir da classe \textit{Exception}, ou a partir de uma
 classe especialista, portanto, estes objetos são projetados para criar e
-reportar informações de erro. 
+reportar informações de erro.
 
 Sendo assim, se comparado a forma tradicional de manipulação de erros, as
 exceções são uma forma elegante de manipulá-los e tratá-los dentro de uma
@@ -22,7 +22,7 @@ aplicação, de acordo com o que vimos no capítulo \ref{heranca} que
 tratava sobre herança, pode-se extender as funcionalidas da classe
 \textit{Exception}, personalizando os seus dados e o seu comportamento \cite{phpMasterWriteCuttingEdgeCode}.
 
-Conforme afirma \citeonline{phpMasterWriteCuttingEdgeCode}, um objeto da classe 
+Conforme afirma \citeonline{phpMasterWriteCuttingEdgeCode}, um objeto da classe
 \textit{Exception}, irá conter informações referente ao erro que ocorreu, dentre
 estas informações estão:
 
@@ -39,45 +39,45 @@ estas informações estão:
 	\setlength{\belowcaptionskip}{9pt}
 	\caption[Métodos públicos da classe \textit{Exception}]{\textbf{Email local X
 	Email em nuvem}}
-	\begin{tabular}{ l | p{0.7\textwidth} }
-	
+	\begin{tabular}{| l | p{0.7\textwidth} |}
+
 		\hline
 		\textbf{Método}
 		& \textbf{Descrição} \\
 		\hline
-		
-        \textit{getMessage()} 		
+
+        \textit{getMessage()}
         & Recupeara uma \textit{string} que foi enviada
         para o construtor.
-        
+
         \\ \cline{1-2}
-        \textit{getCode()} 			
+        \textit{getCode()}
         & Recupera o código de erro.
         \\ \cline{1-2}
-        
-        \textit{getFile()} 			
+
+        \textit{getFile()}
         & Recupera o arquivo em que a exceção foi lançada.
         \\ \cline{1-2}
-        
-        \textit{getLine()} 			
+
+        \textit{getLine()}
         & Recupera o número da linha em que a exceção ocorreu.
         \\ \cline{1-2}
-        
-        \textit{getPrevious()} 		
+
+        \textit{getPrevious()}
         & Recupera um objeto de uma exceção.
         \\ \cline{1-2}
-        
-        \textit{getTrace()} 		
+
+        \textit{getTrace()}
         & Recupera um \textit{array} multimensional contendo as chamadas de
         métodos, incluindo: funções membro, classes, arquivos e argumentos. \\
         \cline{1-2}
-        
-        \textit{getTraceAsString()} 
+
+        \textit{getTraceAsString()}
         & Recupera os dados de \textit{getTrace()} no formato de uma
         \textit{string}.
         \\ \cline{1-2}
-        
-        \textit{\_\_toString()} 		
+
+        \textit{\_\_toString()}
         & Método mágico executado automaticamente quando um objeto é exibido em
         tela como uma \textit{string}. Sendo assim, retorna uma \textit{string}
         descrevendo os detalhes da exceção.
@@ -92,7 +92,7 @@ estas informações estão:
 	\end{footnotesize}
 \end{table}
 
-\FloatBarrier 	% Este comando impede que as imagens 
+\FloatBarrier 	% Este comando impede que as imagens
 				% flutuem a partir deste ponto no seu documento
 
 \textit{Uma imagem que descreva como se faz para lançar uma exceção e outra
