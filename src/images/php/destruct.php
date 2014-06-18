@@ -4,6 +4,6 @@ class Carro
 {
     public function __destruct()
     {
-        // Tarefa
+        // Tarefa ...
     }
 }
