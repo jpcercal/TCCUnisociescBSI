@@ -35,9 +35,39 @@ São métodos responsáveis por modificar e recuperar os estados de uma variáve
 membro de uma classe permitindo que esta função membro esteja exposta a todo o
 escopo da aplicação.
 
+A seguir na Figura \ref{fig:methodGettersAndSetters}, é apresentado um exemplo
+de implementação do padrão de métodos \textit{getters and setters} na
+linguagem \acs{PHP}:
+
+\begin{figure}[h!tb]
+	\caption{Métodos getters e setters na linguagem PHP}
+	\label{fig:methodGettersAndSetters}
+
+	\centering
+	\includegraphics[width=0.75\textwidth]{images/method-getters-and-setters.png}
+
+	\centering
+	\footnotesize Fonte: \fonteOAutor
+\end{figure}
+
+\FloatBarrier 	% Este comando impede que as imagens
+				% flutuem a partir deste ponto no seu documento
+
+Logo abaixo, é apresentado em detalhes as linhas de código exibidas na Figura 
+\ref{fig:methodGettersAndSetters}:
+
+\begin{enumerate}[a)]
+    \item linha 3: vê-se a declaração da classe \textit{Carro};
+    \item linha 5: define-se a propriedade \textbf{\$cor};
+    \item linha 7: cria-se um método responsável por recuperar o valor da
+    propridade \textbf{\$cor} que recebe o nome de \textit{getCor};
+    \item linha 12: implementa-se um método responsável por modificar o estado
+    da propriedade cor, sendo que, o método é nomeado como \textit{setCor}.
+\end{enumerate}
+
 No caso do método configurar, do inglês \textit{set}, ele permite que os
 clientes de um objeto configurem novos valores para uma propriedade, realizando
-antecipadamente uma ação para validar a entrada de dados por exemplo.
+antecipadamente uma ação para validar a entrada de dados.
 
 Em contrapartida, existe o método obter, do inglês \textit{get}, que recupera o
 valor de uma propriedade, sendo que, este método poderia realizar por exemplo uma
@@ -46,3 +76,6 @@ formatação adequada de uma propriedade.
 Sendo que, o nome desses métodos (por conta de uma convenção de atribuição de
 nomes) recebe o prefixo \textit{set} ou \textit{get} seguido do nome da
 propriedade, tendo esta a sua primeira letra em caixa alta \cite{javaComoProgramar}.
+
+A seguir será apresentada uma forma elegante de tratar erros em uma aplicação
+orientada a objetos através de Exceções.
