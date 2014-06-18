@@ -1,11 +1,12 @@
 \subsection{Encapsulamento}
 
-Até então quando definimos as propriedades para a nossa classe, deixamos elas
-com a visibilidade: privada, do inglês, \textit{private}. Sendo que, sempre que
-definirmos as propriedades e métodos em uma classe deve-se informar qual a  sua
-visibilidade. Por conseguinte, existem três visibilidades, são elas: privada,
-protegida e pública. Segundo \citeonline{javaComoProgramar}, os conceitos de
-visibilidade também são chamados de modificadores de acesso.
+Até então quando foi realizada a criação de propriedades para a nossa
+classe, elas foram definidas com a visibilidade: privada, do inglês,
+\textit{private}. Sendo que, sempre que definirmos as propriedades e métodos em 
+uma classe deve-se informar qual a  sua visibilidade. Por conseguinte, existem 
+três visibilidades, são elas: privada, protegida e pública. Segundo 
+\citeonline{javaComoProgramar}, os conceitos de visibilidade também são
+chamados de modificadores de acesso.
 
 A visibilidade privada, do inglês \textit{private}, permite acesso somente
 dentro do escopo da classe que definiu a propriedade ou método. Enquanto que, a
@@ -18,16 +19,15 @@ uma propriedade \cite{learningJava}.
 
 Sendo assim, por questões de segurança da aplicação é interessante fornecer
 interfaces para manipulação dos estados de um objeto. Por conta disto,  sempre
-que definirmos uma propriedade em uma classe iremos utilizar a visibilidade
-privada, caso essa classe não implemente conceitos de herança posteriormente,
+que definirmos uma propriedade em uma classe será utilizadar a visibilidade
+privada, caso essa classe não implemente conceitos de herança posteriormente, 
 ou então, com visibilidade protegida afim de permitir que as classes
-especialistas herdem as suas definições. E, é justamente este o conceito de
+especialistas  herdem as suas definições. E, é justamente este o conceito de 
 encapsulamento, realizar o ocultamento dos dados ou informações \cite{javaComoProgramar}.
 
 Mas, para que um cliente de um objeto – todos os objetos que estão fora do
-escopo da classe -  possa modificar os estados das propriedades definimos
-métodos especialistas conhecidos como: métodos \textit{getters} e
-\textit{setters}.
+escopo da classe -  possam modificar os estados das propriedades, são criados
+métodos especialistas conhecidos como: métodos \textit{getters} e \textit{setters}.
 
 \subsubsection{Métodos getters e setters}
 

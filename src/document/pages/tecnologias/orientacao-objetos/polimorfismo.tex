@@ -10,9 +10,9 @@ são métodos que fornecem resultados distintos  de acordo com a subclasse
 \cite{php5ConceitosProgramacaoEIntegracaoComBancoDeDados}. Desta forma quem
 chama o método não precisa distingui-lo.
 
-Veremos a seguir a atribuição deste conceito no processo de aceleração de um
-veículo. Por conta disto, imagine o exemplo a seguir: dentre os comandos
-disponíveis em um veículo, temos o acelerador que fornece uma interface
+A seguir, será apresentado a atribuição deste conceito no processo de aceleração
+de um veículo. Por conta disto, imagine o exemplo a seguir: dentre os comandos
+disponíveis em um veículo, tem-se o acelerador que fornece uma interface
 encapsulando a forma que compreende em como as coisas funcionam. Agora vamos
 supor que vamos acelerar dois veículos diferentes, o primeiro veículo trata-se
 de um carro popular com motor 1.0, enquanto que, o outro veículo é um
@@ -22,14 +22,16 @@ que permite ao condutor se locomover de maneira mas rápida. Note, que quando o
 condutor acelerar o carro popular este deverá ter aceleração mais lenta se
 comparado ao esportivo, na prática é disto que se trata o polimorfismo.
 
-Voltando-se para o paradigma da orientação a objetos poderíamos ter uma classe
-generalista chamada \textit{Carro} que traria uma maneira de acelerar um
-veículo.  E, bom base nesta classe, criar duas outras classes especialistas, sendo que,
-poderia ser nomeadas como: \textit{CarroPopular} e \textit{CarroEsportivo}.
+Voltando-se para o paradigma da orientação a objetos seria possível existir uma
+classe generalista chamada \textit{Carro} que seria responsável em definir um
+meio padronizado para realizar a aceleração de um veículo. E, com base nesta
+classe, criar duas outras classes especialistas, sendo que, poderiam ser
+nomeadas como: \textit{CarroPopular} e \textit{CarroEsportivo}.
+
 A seguir será apresentada a implementação destes conceitos
 utilizando a linguagem de programação PHP.
 
-\textit{Imagine o exemplo a seguir onde temos uma classe carro que possuí um
+\textit{Imagine o exemplo a seguir onde existe uma classe carro que possuí um
 método acelerar e que existam duas outras classes que extendem a classe carro, uma
 delas é a Lamborghini a outra é “Ford Fiesta”, ambos os veículos
 aceleram, entretanto a lamborgini deverá ter uma aceleração superior, sendo assim irá
