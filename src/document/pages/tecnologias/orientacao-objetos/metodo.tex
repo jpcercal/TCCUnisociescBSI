@@ -16,7 +16,7 @@ uma função que está associada a uma classe \cite{programmingPhp}.
 	\label{fig:metodo}
 
 	\centering
-	\includegraphics[width=0.75\textwidth]{images/method.png}
+	\includegraphics[width=0.68\textwidth]{images/method.png}
 
 	\centering
 	\footnotesize Fonte: \fonteOAutor
@@ -33,11 +33,11 @@ apresentado na Figura \ref{fig:metodo}:
     \item linha 3: define-se uma classe chamada \textit{Carro};
     \item linha 4: informa-se onde inicia o bloco de uma classe;
     \item linha 5 e 7: cria-se duas propriedades para a classe
-    \textit{Carro}, são elas: \textit{\$cor} e \textit{\$quantidadePortas};
+    \textit{Carro};
     \item linha 9: é solicitado para que o interpretador crie um método
-    cuja visibilidade seja pública e definisse que este método será identificado
+    cuja visibilidade seja pública e define-se que este método será identificado
     pelo nome \textit{setCor}.
-    Além disso, informasse que este método deve receber um parâmetro (um valor
+    Além disso, informa-se que este método deve receber um parâmetro (um valor
     que  irá configurar a propriedade de uma classe);
     \item linha 10: define-se onde inicia o bloco cujo escopo
     corresponda ao método \textit{setCor};
@@ -45,43 +45,13 @@ apresentado na Figura \ref{fig:metodo}:
     \textit{\$this}, esta variável permite acessar qualquer propriedade ou
     método dentro da própria classe ou \textit{superclasse}; depois, usou-se
     o operador de acesso a um objeto (representado pelo símbolo \textbf{->}); em
-    seguida, informa-se ao interpretado do \acs{PHP}, a necessidade de manipular
-    o valor da propriedade \textit{cor}, sendo que, ela deverá receber o valor
+    seguida, informa-se ao interpretador do \acs{PHP}, a necessidade de
+    manipular o valor da propriedade \textit{cor}, sendo que, ela deverá receber o valor
     informado como parâmetro para o método \textit{setCor};
     \item linha 12: define-se onde termina o bloco que corresponde ao
     método \textit{setCor};
     \item linha 13: informa-se o encerramento do bloco de uma classe.
 \end{enumerate}
 
-Isto permite que de fora da classe carro outro objeto configure a cor de um
-veículo passando uma mensagem ao objeto carro com a cor solicitada. Na Figura
-\ref{fig:chamadaMetodo} será exibido um exemplo desta situação:
-
-
-\begin{figure}[h!tb]
-	\caption{Chamada de um Método utilizando a linguagem PHP}
-	\label{fig:chamadaMetodo}
-
-	\centering
-	\includegraphics[width=0.75\textwidth]{images/method-call.png}
-
-	\centering
-	\footnotesize Fonte: \fonteOAutor
-\end{figure}
-
-\FloatBarrier 	% Este comando impede que as imagens
-				% flutuem a partir deste ponto no seu documento
-
-Abaixo, você irá conferir uma explicação referente ao código que foi
-apresentado na Figura \ref{fig:chamadaMetodo}:
-
-\begin{enumerate}[a)]
-    \item linha 1: tem-se o início da execução de um bloco de código
-    PHP;
-    \item linha 2: ocorre a criação de um objeto do tipo \textit{Carro};
-    \item linha 5: realiza-se a chamada de um método chamado
-    \textit{setCor}, sendo que, informa-se um parâmetro para ele, que na
-    linguagem PHP representa uma \textit{string} (cadeira de caracteres). Logo,
-    configura-se o valor da propriedade \textit{cor} da classe \textit{Carro}
-    para receber o valor \textit{azul}.
-\end{enumerate}
+Como foi visto o conceito de métodos a seguir será apresentado o conceito de
+propriedades.
