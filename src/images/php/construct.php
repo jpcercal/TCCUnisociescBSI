@@ -6,6 +6,8 @@ class Carro
 
     public function __construct($cor)
     {
-        $this->cor = $cor;
+        $this->setCor($cor);
     }
+
+    // ...
 }
