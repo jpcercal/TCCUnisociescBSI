@@ -18,7 +18,7 @@ reportar informações de erro.
 
 Sendo assim, se comparado a forma tradicional de manipulação de erros, as
 exceções são uma forma elegante de manipulá-los e tratá-los dentro de uma
-aplicação, de acordo com o que foi visto no capítulo \ref{heranca} que
+aplicação, de acordo com o que foi visto no capítulo que
 tratava sobre herança, pode-se extender as funcionalidas da classe
 \textit{Exception}, personalizando os seus dados e o seu comportamento \cite{phpMasterWriteCuttingEdgeCode}.
 
@@ -32,6 +32,9 @@ estas informações estão:
     \item uma mensagem;
     \item e, opcionalmente, um código de erro.
 \end{enumerate}
+
+O Quadro \ref{tab:excecao} apresenta os métodos da classe \textit{Exception}
+presente na linguagem de programação \acs{PHP}.
 
 % Esta tabela está na p.52] da referencia: phpObjectsPatternsAndPractice
 \begin{table}[h!tb]
@@ -94,5 +97,38 @@ estas informações estão:
 \FloatBarrier 	% Este comando impede que as imagens
 				% flutuem a partir deste ponto no seu documento
 
-\textit{Uma imagem que descreva como se faz para lançar uma exceção e outra
-para captura-la\ldots.}
+
+A seguir, será apresentada na Figura \ref{fig:excecao} a manipulação de um erro de
+processamento com o uso da classe \textit{Exception}.
+
+\begin{figure}[h!tb]
+	\caption{Classe Exception da linguagem PHP}
+	\label{fig:excecao}
+
+	\centering
+	\includegraphics[width=0.75\textwidth]{images/exception.png}
+
+	\centering
+	\footnotesize Fonte: \fonteOAutor
+\end{figure}
+
+\FloatBarrier 	% Este comando impede que as imagens
+				% flutuem a partir deste ponto no seu documento
+
+A seguir, é apresentado em detalhes as linhas de código exibidas na Figura 
+\ref{fig:excecao}:
+
+\begin{enumerate}[a)]
+    \item linha 7: define-se um método chamado \textit{setCor};
+    \item linha 9: utiliza-se a palavra reservada \textbf{try} informando ao
+    \acs{PHP} que o que estiver entre os delimitadores deste bloco pode não
+    ocorrer de forma esperada, ou seja, tente realizar este procedimento;
+    \item linha 13: caso ocorra algum problema na execução do \textit{script}
+    definido na linha 11, o \acs{PHP} irá tratar o erro atribuindo-o a variável
+    \textbf{\$e};
+    \item linha 14: mostra uma mensagem descritiva com relação ao erro que acaba
+    de ocorrer.
+\end{enumerate}
+
+Em seguida, será apresentado o conceito de interfaces, que permitem definir
+contratos de implementação entre as classes que o assinarem.
