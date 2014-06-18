@@ -13,5 +13,38 @@ projeto, ou seja, é possível definir que um objeto irá receber como argumento
 um método construtor uma interface, sendo que, é permitido passar como parâmetro
 qualquer classe que implemente a interface.
 
-Agora será apresentado um exemplo referente a definição de uma interface
-utilizando a linguagem PHP.
+Agora na Figura \ref{fig:interface} será apresentado um exemplo referente a
+definição de uma interface utilizando a linguagem \acs{PHP}.
+
+\begin{figure}[h!tb]
+	\caption{Interface implementação na linguagem PHP}
+	\label{fig:interface}
+
+	\centering
+	\includegraphics[width=0.75\textwidth]{images/interface.png}
+
+	\centering
+	\footnotesize Fonte: \fonteOAutor
+\end{figure}
+
+\FloatBarrier 	% Este comando impede que as imagens
+				% flutuem a partir deste ponto no seu documento
+
+A seguir, é apresentado em detalhes as linhas de código exibidas na Figura 
+\ref{fig:interface}:
+
+\begin{enumerate}[a)]
+    \item linha 3: define-se uma interface nomeada como
+    \textit{VeiculoInterface};
+    \item linha 5: define-se a assinatura de um método, no qual, todas as
+    classes que decidirem assinar um contrato com a interface deverão definir um
+    método com a mesma assinatura;
+    \item linha 8: implementa-se uma classe chamada \textit{Carro}, sendo que,
+    ela assina um contrato com a interface \textit{VeiculoInterface}, por conta
+    da palavra chave \textbf{implements};
+    \item linha 12: define-se o método que foi solicitado pela interface.
+\end{enumerate}
+
+Com isto, finaliza-se o capítulo que trata sobre os conceitos de orientação a
+objetos com exemplos de implementação na linguagem \acs{PHP}, a seguir será
+apresentado o capítulo que tratará sobre banco de dados.
