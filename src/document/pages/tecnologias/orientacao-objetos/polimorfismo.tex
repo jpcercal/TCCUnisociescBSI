@@ -18,7 +18,7 @@ supor que deseja-se acelerar dois veículos diferentes, o primeiro veículo
 trata-se de um carro popular com motor 1.0, enquanto que, o outro veículo é um
  esportivo, e por conta disto, estamos falando de um carro com motor 2.0. Então,
 ambos os veículos possuem a mesma interface de comunicação: o pedal acelerador,
-que permite ao condutor se locomover de maneira mais rápida. 
+que permite ao condutor se locomover de maneira mais rápida.
 
 Note, que quando o condutor acelerar o carro popular este deverá ter aceleração
 mais lenta se comparado ao esportivo, na prática é disto que se trata o polimorfismo.
@@ -46,10 +46,10 @@ utilizando a linguagem de programação \acs{PHP}.
 \FloatBarrier 	% Este comando impede que as imagens
 				% flutuem a partir deste ponto no seu documento
 
-A seguir, é apresentado em detalhes as linhas de código exibidas na Figura 
+A seguir, é apresentado em detalhes as linhas de código exibidas na Figura
 \ref{fig:polimorfismo}:
 
-\begin{enumerate}[a)]
+\begin{alineas}
     \item linha 3: define-se a existência da classe \textit{Carro};
     \item linha 4: tem-se a declaração do método \textit{acelerar} que trata de
     uma forma padrão de acelerar qualquer veículo;
@@ -64,13 +64,13 @@ A seguir, é apresentado em detalhes as linhas de código exibidas na Figura
     \item linha 24: redefine-se o método \textit{acelerar}, pois, um carro
     esportivo acelera a uma velocidade constante de cento e trinta quilômetros
     por hora (neste caso).
-\end{enumerate}
+\end{alineas}
 
 Conforme foi visto neste capítulo, ambos os veículos aceleram, entretanto o
 carro esportivo tem um desempenho melhor do que o carro popular, entretanto, a
 modelagem permite reusar a classe carro e definir apenas as características
 pertinentes a ambos os veículos, sendo assim, os objetos que chamarem esta
-classe não entendem como a implementação acontece, mas realmente aceleram de 
+classe não entendem como a implementação acontece, mas realmente aceleram de
 maneira correspondente ao tipo de veículo.
 
 A seguir será apresentado o conceito de encapsulamento, que permite esconder do

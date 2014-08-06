@@ -2,9 +2,9 @@
 
 Até então quando foi realizada a criação de propriedades para a nossa
 classe, elas foram definidas com a visibilidade: privada, do inglês,
-\textit{private}. Sendo que, sempre que definirmos as propriedades e métodos em 
-uma classe deve-se informar qual a  sua visibilidade. Por conseguinte, existem 
-três visibilidades, são elas: privada, protegida e pública. Segundo 
+\textit{private}. Sendo que, sempre que definirmos as propriedades e métodos em
+uma classe deve-se informar qual a  sua visibilidade. Por conseguinte, existem
+três visibilidades, são elas: privada, protegida e pública. Segundo
 \citeonline{javaComoProgramar}, os conceitos de visibilidade também são
 chamados de modificadores de acesso.
 
@@ -20,9 +20,9 @@ uma propriedade \cite{learningJava}.
 Sendo assim, por questões de segurança da aplicação é interessante fornecer
 interfaces para manipulação dos estados de um objeto. Por conta disto,  sempre
 que definirmos uma propriedade em uma classe será utilizadar a visibilidade
-privada, caso essa classe não implemente conceitos de herança posteriormente, 
+privada, caso essa classe não implemente conceitos de herança posteriormente,
 ou então, com visibilidade protegida afim de permitir que as classes
-especialistas  herdem as suas definições. E, é justamente este o conceito de 
+especialistas  herdem as suas definições. E, é justamente este o conceito de
 encapsulamento, realizar o ocultamento dos dados ou informações \cite{javaComoProgramar}.
 
 Mas, para que um cliente de um objeto – todos os objetos que estão fora do
@@ -53,17 +53,17 @@ linguagem \acs{PHP}:
 \FloatBarrier 	% Este comando impede que as imagens
 				% flutuem a partir deste ponto no seu documento
 
-Logo abaixo, é apresentado em detalhes as linhas de código exibidas na Figura 
+Logo abaixo, é apresentado em detalhes as linhas de código exibidas na Figura
 \ref{fig:methodGettersAndSetters}:
 
-\begin{enumerate}[a)]
+\begin{alineas}
     \item linha 3: vê-se a declaração da classe \textit{Carro};
     \item linha 5: define-se a propriedade \textbf{\$cor};
     \item linha 7: cria-se um método responsável por recuperar o valor da
     propridade \textbf{\$cor} que recebe o nome de \textit{getCor};
     \item linha 12: implementa-se um método responsável por modificar o estado
     da propriedade cor, sendo que, o método é nomeado como \textit{setCor}.
-\end{enumerate}
+\end{alineas}
 
 No caso do método configurar, do inglês \textit{set}, ele permite que os
 clientes de um objeto configurem novos valores para uma propriedade, realizando
