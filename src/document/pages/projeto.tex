@@ -56,7 +56,6 @@ A seguir será apresentado a especificação dos requisitos de software para a
 ferramenta proposta, lembrando que, esses requisitos tiveram colaborações dos
 próprios participantes da lista de discução ``Rumo a Certificação PHP''.
 
-
 \begin{alineas}
 	\item o sistema deverá ser desenvolvido com a linguagem PHP 5.4+;
 	\item o sistema deverá persistir as informações em um base de dados relacional
@@ -72,7 +71,6 @@ próprios participantes da lista de discução ``Rumo a Certificação PHP''.
 	\item o sistema deverá permitir que usuários sem conta de acesso e que não
 	possuam ou não queiram utilizar uma conta Google, possam gerar templates de
 	e-mail com o layout padrão de perguntas/respostas;
-    \item o sistema dever
     \item o sistema deverá estar preparado para internacionalização, tendo como
     opções de idioma para o usuário final: o inglês e o português;
     \item assim que os usuários realizarem a autenticação, o sistema deverá
@@ -89,7 +87,8 @@ próprios participantes da lista de discução ``Rumo a Certificação PHP''.
     porém, poderá adicionalmente gerenciar as perguntas e respostas de qualquer
     usuário;
     \item o super usuário poderá realizar qualquer procedimento do usuário
-    contribuidor, e adicionalmente, gerenciar as categorias e tags;
+    contribuidor, e adicionalmente, gerenciar as categorias, tags, usuários e
+    permissões de acesso;
     \item os usuários que se autenticarem com um usuário e senha poderão
     disparar e-mails (após cadastrar uma pergunta/resposta) para a lista de
     discussão pelo próprio sistema (através de uma conta SMTP do sistema);
@@ -159,3 +158,45 @@ próprios participantes da lista de discução ``Rumo a Certificação PHP''.
     repositório de perguntas e respostas, facilitando a implementação de
     terceiros mediante autenticação.
 \end{alineas}
+
+\section{DIAGRAMA DE CASOS DE USO}
+
+Na Figura \ref{fig:diagramaCasosDeUso}, é apresentado diagrama de casos de uso
+da aplicação.
+
+\begin{figure}[h!tb]
+	\caption{Diagrama UML de Casos de Uso}
+	\label{fig:diagramaCasosDeUso}
+
+	\centering
+	\includegraphics[width=\textwidth]{images/usecase.png}
+
+	\centering
+	\footnotesize Fonte: \fonteOAutor
+\end{figure}
+
+\FloatBarrier 	% Este comando impede que as imagens
+				% flutuem a partir deste ponto no seu documento
+
+
+\section{MODELO ENTIDADE RELACIONAMENTO}
+
+Na Figura \ref{fig:modeloEntidadeRelacionamento}, é apresentado a modelagem do
+banco de dados.
+
+\begin{figure}[h!tb]
+	\caption{Modelo Entidade Relacionamento}
+	\label{fig:modeloEntidadeRelacionamento}
+
+	\centering
+	\includegraphics[width=\textwidth]{images/zcpe-reverse-engineer-database.png}
+
+	\centering
+	\footnotesize Fonte: \fonteOAutor
+\end{figure}
+
+\FloatBarrier 	% Este comando impede que as imagens
+				% flutuem a partir deste ponto no seu documento
+
+
+
