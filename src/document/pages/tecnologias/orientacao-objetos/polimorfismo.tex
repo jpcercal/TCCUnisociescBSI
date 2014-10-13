@@ -7,7 +7,7 @@ responder a mensagens de diferentes formas
 Ou seja, polimorfismo é a possibilidade que um objeto tem de alterar o
 comportamento de um objeto com base em uma classe especialista, sendo assim,
 são métodos que fornecem resultados distintos  de acordo com a subclasse
-\cite{php5ConceitosProgramacaoEIntegracaoComBancoDeDados}. Desta forma quem
+\cite{php5ConceitosProgramacaoEIntegracaoComBancoDeDados}. Desta forma, quem
 chama o método não precisa distingui-lo.
 
 A seguir, será apresentado a atribuição deste conceito no processo de aceleração
@@ -15,12 +15,12 @@ de um veículo. Por conta disto, imagine o exemplo a seguir: dentre os comandos
 disponíveis em um veículo, tem-se o acelerador que fornece uma interface
 encapsulando a forma de como um motor realiza a aceleração. Agora vamos
 supor que deseja-se acelerar dois veículos diferentes, o primeiro veículo
-trata-se de um carro popular com motor 1.0, enquanto que, o outro veículo é um
+trata-se de um carro popular com motor 1.0, enquanto que o outro veículo é um
  esportivo, e por conta disto, estamos falando de um carro com motor 2.0. Então,
 ambos os veículos possuem a mesma interface de comunicação: o pedal acelerador,
 que permite ao condutor se locomover de maneira mais rápida.
 
-Note, que quando o condutor acelerar o carro popular este deverá ter aceleração
+Note que, quando o condutor acelerar o carro popular este deverá ter aceleração
 mais lenta se comparado ao esportivo, na prática é disto que se trata o polimorfismo.
 
 Voltando-se para o paradigma da orientação a objetos seria possível existir uma
@@ -53,15 +53,15 @@ A seguir, é apresentado em detalhes as linhas de código exibidas na Figura
     \item linha 3: define-se a existência da classe \textit{Carro};
     \item linha 4: tem-se a declaração do método \textit{acelerar} que trata de
     uma forma padrão de acelerar qualquer veículo;
-    \item linha 13: define-se a classe \textit{CarroPopular}, sendo que, ela
+    \item linha 13: define-se a classe \textit{CarroPopular}, sendo que ela
     herda todas as características e funcionalidades da classe \textit{Carro};
     \item linha 15: reescreve-se o método \textit{acelerar} que foi definido na
-    classe \textit{Carro}, pois, um carro popular acelera neste caso a uma
+    classe \textit{Carro}, pois um carro popular acelera neste caso a uma
     velocidade de oitenta quilômetros por hora;
     \item linha 22: define-se a classe \textit{CarroEsportivo}, que, da mesma
-    maneira que a classe \textit{CarroPopular} herda as propriedades e métodos
+    maneira que a classe \textit{CarroPopular}, herda as propriedades e métodos
     que foram definidos na classe pai \textit{Carro};
-    \item linha 24: redefine-se o método \textit{acelerar}, pois, um carro
+    \item linha 24: redefine-se o método \textit{acelerar}, pois um carro
     esportivo acelera a uma velocidade constante de cento e trinta quilômetros
     por hora (neste caso).
 \end{alineas}
