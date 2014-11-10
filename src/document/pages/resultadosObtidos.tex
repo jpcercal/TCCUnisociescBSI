@@ -174,59 +174,128 @@ através do idioma dos usuários.
 \FloatBarrier 	% Este comando impede que as imagens
 				% flutuem a partir deste ponto no seu documento
 
+Na Figura \ref{fig:zcpeHome}, exibe-se a página inicial do sistema que apresenta
+três maneiras de uso da plataforma, são elas:
 
+\begin{alineas}
+    \item anonimamente: permite que o usuário acesse a aplicação sem que haja
+    autenticação, liberando acesso para que o usuário gere um template de e-mail
+    para disparar manualmente através de seu cliente de e-mail pessoal;
+    \item com usuário e senha: permite que o usuário acesse a aplicação com as
+    suas credenciais, isto dá direitos para que o usuário gerencie as suas
+    próprias perguntas e respostas e dispare e-mails para a lista de discussão
+    utilizando uma conta \acs{SMTP} do sistema;
+    \item com uma conta google: permite que o usuário realize a autenticação
+    através de uma conta \textit{Google}, isto lhe dá as mesmas permissões
+    acima, entretanto, o usuário realizará os disparos de e-mail utilizando sua conta
+    \textit{Google}.
+\end{alineas}
 
+No que se refere aos níveis de acesso  de cada usuário, eles estão organizados
+em grupos a fim de facilitar a administração de contas, sendo que, cada grupo
+possuí um conjunto de papéis. Além do grupo padrão no qual todos os usuários
+da plataforma estão inseridos, há um grupo administrativo que permite gerenciar
+as questões que serão exibidas no sistema de simulado e também dá-lhes direito
+de gerenciar todas as questões cadastradas no sistema (inclusive as que não são
+de sua autoria).
 
-% Agora as imagens do sistema
+\begin{figure}[h!tb]
+	\caption{Página inicial da ferramenta}
+	\label{fig:zcpeHome}
 
-Na Figura XX, exibe-se a página inicial do sistema que apresenta três maneiras
-de uso da plataforma.. 
+	\centering
+	\includegraphics[width=\textwidth]{images/resultados/zcpe-home.png}
 
-IMAGEM DA TELA INICIAL DO SISTEMA
+	\centering
+	\footnotesize Fonte: \fonteOAutor
+\end{figure}
 
-FALAR SOBRE AS 3 FORMAS DE USO
-
-FALAR SOBRE OS NÍVEIS DE ACESSO DO SISTEMA (GRUPOS DE USUÁRIOS)
+\FloatBarrier 	% Este comando impede que as imagens
+				% flutuem a partir deste ponto no seu documento
 
 Nota-se também que o sistema proposto está internacionalizado e já conta com
 dois idiomas, o português do Brasil e o inglês internacional conforme mostra a
-Figura XX.
+Figura \ref{fig:zcpeIdioma}.
 
-IMAGEM DA TELA INICIAL DO SISTEMA EM INGLÊS
+\begin{figure}[h!tb]
+	\caption{Caixa para seleção do idioma utilizado no sistema}
+	\label{fig:zcpeIdioma}
 
-A listagem de perguntas apresentada na Figura XX, é o resultado da categorizacao
-de perguntas e respostas da lista de discussão, sendo que, nesta listagem
-apresentam-se dados básicos para o usuário que está logado, e para os usuários
-administradores algumas informacoes adicionais sao exibidas: são elas.. XX e XX
+	\centering
+	\includegraphics[width=\textwidth]{images/resultados/zcpe-idioma.png}
 
-IMAGEM DA LISTAGEM DE PERGUNTAS E RESPOSTAS
+	\centering
+	\footnotesize Fonte: \fonteOAutor
+\end{figure}
 
-A Figura XX, mostra-se a exibicão dos tópicos da lista de discussão diretamente
-do \textit{Google Groups}, onde evidencia-se que não há somente o banco de dados
-de perguntas e respostas, mas também assuntos referente a outros temas que na
-Figura XX, é o caso do ``Acesso ao Dropbox''.
+\FloatBarrier 	% Este comando impede que as imagens
+				% flutuem a partir deste ponto no seu documento
 
-FALAR TAMBÉM PELA FACILIDADE DE BUSCAR UMA QUESTÃO E SABER A QUANTIDADE DE
-QUESTÕES CADASTRADAS
+A listagem de perguntas apresentada na Figura \ref{fig:zcpePerguntaListagem}, é
+o resultado da categorização de perguntas e respostas da lista de discussão,
+sendo que, nesta listagem apresentam-se dados básicos para o usuário que está logado, e para os usuários
+administradores exibe-se uma coluna adicional ``aprovado'' que quando verdadeira
+libera a questão para ser utilizada pelo sistema de simulado.
 
-IMAGEM DA LISTAGEM DE PERGUNTAS E RESPOSTAS DO GOOGLE GROUPS
+\begin{figure}[h!tb]
+	\caption{Listagem de perguntas}
+	\label{fig:zcpePerguntaListagem}
 
-Neste momento apresenta-se em detalhes na Figura XX, a representacão da exibicão
-de detalhes de uma questão que está sendo gerenciada através da ferramenta
-proposta.
+	\centering
+	\includegraphics[width=\textwidth]{images/resultados/zcpe-pergunta-listagem.png}
 
-IMAGEM DE DETALHES DE UMA QUESTÃO DA FERRAMENTA
+	\centering
+	\footnotesize Fonte: \fonteOAutor
+\end{figure}
 
-Nota-se também que todas as informacões que o sistema mantém referente a questão
-são exibidos, sendo que, as linhas XX e XX são exibidas somente para os usuários
-com permissões administrativas.
+\FloatBarrier 	% Este comando impede que as imagens
+				% flutuem a partir deste ponto no seu documento
 
-A seguir apresenta-se na Figura XX, a mesma questão na plataforma do
-\textit{Google Groups} no qual não há nenhum gerenciamento das questões que
+
+IMAGEM DA LISTAGEM DE PERGUNTAS E RESPOSTAS DO GOOGLE GROUPS 
+
+Neste momento apresenta-se em detalhes na Figura \ref{fig:zcpePerguntaDetalhes},
+a representação da exibição de detalhes de uma questão que está sendo gerenciada
+através da ferramenta proposta.
+
+\begin{figure}[h!tb]
+	\caption{Detalhes de uma questão}
+	\label{fig:zcpePerguntaDetalhes}
+
+	\centering
+	\includegraphics[width=\textwidth]{images/resultados/zcpe-pergunta-detalhes.png}
+
+	\centering
+	\footnotesize Fonte: \fonteOAutor
+\end{figure}
+
+\FloatBarrier 	% Este comando impede que as imagens
+				% flutuem a partir deste ponto no seu documento
+
+Nota-se também que nem todas as informacões que o sistema mantém referente a
+questão são exibidos na Figura \ref{fig:zcpePerguntaDetalhes}, sendo que, a
+linha ``aprovado'' é exibida apenas para os usuários com permissões
+administrativas.
+
+A seguir apresenta-se na Figura \ref{fig:zcpePerguntaDetalhesGoogleGroups}, a
+mesma questão na plataforma do \textit{Google Groups} no qual não há nenhum gerenciamento das questões que
 foram postadas, diferentemente da nova forma de gestão de perguntas proposta por
 este projeto.
 
-IMAGEM DE DETALHES DE UMA QUESTÃO DA FERRAMENTA DO GOOGLE GROUPS
+
+\begin{figure}[h!tb]
+	\caption{Detalhes da questão 1443 no Google Groups}
+	\label{fig:zcpePerguntaDetalhesGoogleGroups}
+
+	\centering
+	\includegraphics[width=\textwidth]{images/resultados/google-groups-pergunta-1443.png}
+
+	\centering
+	\footnotesize Fonte: \fonteOAutor
+\end{figure}
+
+\FloatBarrier 	% Este comando impede que as imagens
+				% flutuem a partir deste ponto no seu documento
 
 Como já havia sido citado, a ferramenta está sendo utilizada e está disponível
-no seguinte endereco: \textit{http://zcpe.cekurte.com}.
+publicamente no seguinte endereco: \textit{http://zcpe.cekurte.com}.
